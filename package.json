@@ -29,7 +29,7 @@
     },
     "unlisted": false
   },
-  "main": "main.js",
+  "main": "app.js",
   "dependencies": {
     "fast-jwt": "^4.0.5"
   }
