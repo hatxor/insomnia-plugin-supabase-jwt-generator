@@ -24,6 +24,9 @@
     "name": "insomnia-plugin-supabase-jwt-generator",
     "displayName": "Supabase JWT Generator",
     "description": "An Insomnia plugin for generating JWTs following Supabase Auth standard",
+    "images": {
+      "cover": "assets/cover.svg"
+    },
     "publisher": {
       "name": "Andrés Téllez"
     },
