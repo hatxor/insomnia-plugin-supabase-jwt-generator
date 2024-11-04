@@ -1,0 +1,36 @@
+{
+  "name": "insomnia-plugin-supabase-jwt-generator",
+  "description": "An Insomnia plugin for generating JWTs following Supabase Auth standard",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:hatxor/insomnia-plugin-supabase-jwt-generator.git"
+  },
+  "keywords": [
+    "insomnia",
+    "insomnia plugin",
+    "insomnia-plugin-supabase-jwt-generator",
+    "supabase",
+    "jwt",
+    "supabase auth jwt"
+  ],
+  "author": "Andrés Téllez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hatxor/insomnia-plugin-supabase-jwt-generator/issues"
+  },
+  "homepage": "https://github.com/hatxor/insomnia-plugin-supabase-jwt-generator",
+  "insomnia": {
+    "name": "insomnia-plugin-supabase-jwt-generator",
+    "displayName": "Supabase JWT Generator",
+    "description": "An Insomnia plugin for generating JWTs following Supabase Auth standard",
+    "publisher": {
+      "name": "Andrés Téllez"
+    },
+    "unlisted": false
+  },
+  "main": "main.js",
+  "dependencies": {
+    "fast-jwt": "^4.0.5"
+  }
+}
