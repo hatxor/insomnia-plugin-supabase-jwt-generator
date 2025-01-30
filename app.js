@@ -26,6 +26,12 @@ module.exports.templateTags = [{
             type: 'number',
         },
         {
+            displayName: 'Role',
+            description: 'Role of the requester',
+            defaultValue: 'authenticated',
+            type: 'string',
+        },
+        {
             displayName: 'Project URL',
             description: 'Supabase Project URL (acts as issuer)',
             placeholder: 'https://project-id.supabase.co/auth/v1',
@@ -38,7 +44,7 @@ module.exports.templateTags = [{
         }
     ],
     
-    async run(context, email, sub, expMin, iss, jwtSecret) {
+    async run(context, email, sub, expMin, role, iss, jwtSecret) {
 
         const iat = Math.floor(new Date().getTime() / 1000);
         const exp = iat + expMin * 60;
@@ -47,12 +53,12 @@ module.exports.templateTags = [{
 
         const payload = {
             iss,
-            aud: "authenticated",
+            aud: role,
             iat,
             exp,
             sub,
             email,
-            role: "authenticated",
+            role: role,
             app_metadata: {
                 provider: "email"
             },
